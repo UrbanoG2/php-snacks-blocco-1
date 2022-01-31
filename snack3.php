@@ -43,23 +43,12 @@ $posts = [
 ];
 
 
-// foreach ($posts as $key => $value) {
-//     echo $key . "<br>";
-
-//     foreach ($data as $post) {
-//         echo $post['title'] . " " . $post['author'] . " " .  $post['text'];
-//     }
-// }
-
 foreach ($posts as $key => $post) {
-    echo $key;
-    if ($key === '10/01/2019'){
-        echo $post["title"];
+    echo $key . "<br>";
+
+    foreach ($post as $value) {  
+        echo $value["title"] . "<br>" . $value["author"] . "<br>" . $value["text"] . "<br>";
     }
-    
-    // foreach ($post as $key => $value) {
-    //     echo ;
-    // }
 }
 
 ?>

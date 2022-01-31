@@ -9,7 +9,6 @@
         if (!in_array($randomNumber, $emptyArr)) {
             $emptyArr[] = $randomNumber;
         }
-
         echo $randomNumber . " " ;
     }
 ?>

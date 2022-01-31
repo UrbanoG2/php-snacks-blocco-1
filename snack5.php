@@ -21,11 +21,12 @@ $explodedPara = explode(".", $bigPara);
     <p>
         <?php
             echo($bigPara);
+
             var_dump($explodedPara);
 
-            // for ($i=0; $i < count($explodedPara); $i++) { 
-            //     echo ($explodedPara[i]);
-            // }   
+            for ($i=0; $i < count($explodedPara); $i++) { 
+                echo ($explodedPara[$i]);
+            }   
             
         ?>
     </p>
