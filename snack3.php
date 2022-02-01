@@ -43,14 +43,6 @@ $posts = [
 ];
 
 
-foreach ($posts as $key => $post) {
-    echo $key . "<br>";
-
-    foreach ($post as $value) {  
-        echo $value["title"] . "<br>" . $value["author"] . "<br>" . $value["text"] . "<br>";
-    }
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -60,8 +52,18 @@ foreach ($posts as $key => $post) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+  
 </head>
 <body>
-    
+     <?php  
+   
+    foreach ($posts as $key => $post) {
+    echo $key . "<br>";
+
+    foreach ($post as $value) {  
+        echo $value["title"] . "<br>" . $value["author"] . "<br>" . $value["text"] . "<br>";
+    }
+    } ?>
 </body>
 </html>
